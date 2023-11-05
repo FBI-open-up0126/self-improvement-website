@@ -34,11 +34,11 @@
 
     &__nav-link {
         text-decoration: none;
-        color: $color-secondary;
+        color: $color-gray-dark;
         transition: color 0.2s;
 
         &:hover {
-            color: $color-secondary-light;
+            color: $color-gray;
         }
     }
 }
