@@ -11,7 +11,7 @@ function MainPage() {
                     focused, hundreds of articles for self improvement, this
                     website has everything for you to become a better self.
                 </p>
-                <Button>Get Started</Button>
+                <Button variation="primary">Get started</Button>
             </section>
         </main>
     );
