@@ -1,21 +1,21 @@
 @import "../variables";
 
 .btn {
-    font-size: $text-medium;
-    font-family: inherit;
-    padding: 1rem 2rem;
-    cursor: pointer;
-    background: none;
-    border: none;
-    border-radius: 1rem;
-    transition: background-color 0.2s;
+	font-size: $text-medium;
+	font-family: inherit;
+	padding: 1.5rem 2rem;
+	cursor: pointer;
+	background: none;
+	border: none;
+	border-radius: 1rem;
+	transition: background-color 0.2s;
 }
 
 .btn-primary {
-    background-color: $color-primary;
-    color: $color-white;
+	background-color: $color-primary;
+	color: $color-white;
 
-    &:hover {
-        background-color: $color-primary-light;
-    }
+	&:hover {
+		background-color: $color-primary-light;
+	}
 }

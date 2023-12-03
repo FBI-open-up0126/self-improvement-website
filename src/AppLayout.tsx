@@ -1,18 +1,24 @@
 import { Outlet, ScrollRestoration } from "react-router-dom";
-import Navbar from "./Navbar";
+import Navbar, { Link } from "./Navbar";
 
 interface Props {
-    children?: React.ReactNode;
+	children?: React.ReactNode;
 }
 
+const LINKS: Link[] = [
+	{ to: "/features", name: "Features" },
+	{ to: "/resources", name: "Resources" },
+	{ to: "/about", name: "About" },
+];
+
 function AppLayout({ children }: Props) {
-    return (
-        <>
-            <Navbar />
-            {children ?? <Outlet />}
-            <ScrollRestoration />
-        </>
-    );
+	return (
+		<>
+			<Navbar links={LINKS} />
+			{children ?? <Outlet />}
+			<ScrollRestoration />
+		</>
+	);
 }
 
 export default AppLayout;
